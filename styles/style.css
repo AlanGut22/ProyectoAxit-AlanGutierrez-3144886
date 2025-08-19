@@ -40,6 +40,7 @@ body {
 	color: white;
 	font-size: 0.9rem;
 	font-family: "Open Sans", sans-serif;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.337);
 }
 
 header {
@@ -468,6 +469,7 @@ header {
 	.texto {
 		color: #86878B;
 		text-align: center;
+		margin-top: 2rem;
 	}
 
 	.tarjetas {
@@ -623,12 +625,6 @@ footer {
 		}
 
 		button {
-			background: #FF9B51;
-			padding: 1rem 0;
-			border: none;
-			color: white;
-			font-size: 0.9rem;
-			font-family: "Open Sans", sans-serif;
 			margin-top: 3rem;
 		}
 	}
@@ -646,3 +642,60 @@ footer {
 }
 
 /* Responsive */
+
+@media(max-width: 1279px) {
+	header {
+		nav {
+			flex-wrap: wrap;
+
+			ul {
+				flex-wrap: wrap;
+			}
+		}
+
+		.principal {
+			padding: 4rem 3rem;
+
+			.texto {
+				width: 60%;
+
+				h1 {
+					font-size: 2rem;
+				}
+			}
+
+			form {
+				width: 37%;
+
+				p {
+					padding: 1rem;
+				}
+			}
+		}
+	}
+
+	.seccion-1 {
+		justify-content: space-between;
+
+		.social {
+			width: 40%;
+		}
+
+		.list-img {
+			width: 60%;
+			justify-content: space-between;
+		}
+	}
+
+	.seccion-2 {
+		padding: 4rem;
+
+		.tabs {
+			.tab {
+				width: 6rem;
+				height: 6rem;
+			}
+		}
+		
+	}
+}
