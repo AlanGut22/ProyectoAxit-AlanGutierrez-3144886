@@ -71,7 +71,7 @@ header {
 	}
 
 	.principal {
-		background: linear-gradient(to top right, rgba(24, 24, 24, 0.521)), url(../assets/images/headerBg.png);
+		background: linear-gradient(to top right, rgba(24, 24, 24, 0.685)), url(../assets/images/headerBg.png);
 		background-size: cover;
 		background-position: center;
 		padding: 9rem;
@@ -216,17 +216,20 @@ header {
 	}
 
 	.texto {
-		width: 42%;
+		width: 45%;
 
 		p {
-			margin: 3rem 0;
+			margin: 3rem 0 2rem;
 			color: #86878B;
+		}
 
+		.segundo-par {
+			margin: 0 0 3rem;
 		}
 	}
 
 	.imagen {
-		width: 27%;
+		width: 30%;
 
 		img {
 			width: 100%;
@@ -260,34 +263,31 @@ header {
 		.parrafo {
 			margin: 2rem 0;
 			color: #86878B;
-
 		}
 
-		.list {
-			.list-1 {
-				display: flex;
-				justify-content: space-around;
-				margin-top: 3rem;
+		.list-1 {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 3rem;
 
-				.imagen-1 {
-					width: 8%;
+			.imagen-1 {
+				width: 9%;
 
-					img {
-						width: 100%;
-					}
+				img {
+					width: 100%;
+				}
+			}
+
+			.list-2 {
+				width: 84%;
+
+				.titulo {
+					font-weight: 600;
+					margin-bottom: 0.5rem;
 				}
 
-				.list-2 {
-					width: 80%;
-
-					.titulo {
-						font-weight: 600;
-						margin-bottom: 0.5rem;
-					}
-
-					.descripcion {
-						color: #86878B;
-					}
+				.descripcion {
+					color: #86878B;
 				}
 			}
 		}
@@ -298,12 +298,10 @@ header {
 	background-color: #F5F5F5;
 	padding: 8rem;
 	display: flex;
-	justify-content: space-evenly;
-	gap: 8rem;
+	justify-content: space-between;
 
 	.texto {
-		width: 40%;
-		align-self: flex-start;
+		width: 42%;
 
 		h2 {
 			margin-bottom: 2rem;
@@ -312,12 +310,15 @@ header {
 		p {
 			margin: 2rem 0;
 			color: #86878B;
+		}
 
+		.segundo-par {
+			margin: 0;
 		}
 	}
 
 	.imagen {
-		width: 35%;
+		width: 40%;
 
 		img {
 			width: 100%;
@@ -393,8 +394,11 @@ header {
 		align-items: center;
 		margin-top: 4rem;
 
+		.tar-especial {
+			margin: 0 1rem;
+		}
+
 		.tarjeta {
-			margin: 1rem;
 			width: 19rem;
 
 			.cabeza {
@@ -421,7 +425,6 @@ header {
 				.subtitulo {
 					color: #A7A7A7;
 					padding: 0.6rem 0 0.9rem;
-					transform: skewX(348deg);
 					font-size: 0.8rem;
 					font-weight: 500;
 				}
@@ -469,17 +472,17 @@ header {
 	.texto {
 		color: #86878B;
 		text-align: center;
-		margin-top: 2rem;
+		margin: 2rem;
 	}
 
 	.tarjetas {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 
 		.tarjeta {
 			margin: 2rem;
-			width: 20%;
+			width: 25%;
 
 			.dialogo {
 				background-image: url(../assets/images/textBubble.png);
@@ -554,7 +557,7 @@ footer {
 	background-color: white;
 
 	.contacto {
-		padding: 7rem;
+		padding: 6rem;
 
 		h3 {
 			font-family: "Raleway", sans-serif;
@@ -645,14 +648,6 @@ footer {
 
 @media(max-width: 1279px) {
 	header {
-		nav {
-			flex-wrap: wrap;
-
-			ul {
-				flex-wrap: wrap;
-			}
-		}
-
 		.principal {
 			padding: 4rem 3rem;
 
@@ -696,6 +691,132 @@ footer {
 				height: 6rem;
 			}
 		}
-		
+
+		.texto {
+			width: 55%;
+
+			p {
+				margin: 2rem 0 1rem;
+			}
+
+			.segundo-par {
+				margin: 0 0 2rem;
+			}
+		}
+
+		.imagen {
+			width: 25%;
+		}
+	}
+
+	.seccion-3 {
+		padding: 4rem;
+
+		.texto {
+			width: 50%;
+
+			.list-1 {
+				margin-top: 2rem;
+
+				.imagen-1 {
+					width: 10%;
+				}
+			}
+		}
+	}
+
+	.seccion-4 {
+		padding: 4rem;
+		align-items: center;
+
+		.texto {
+			width: 50%;
+
+			p {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	.seccion-5 {
+		padding: 4rem;
+
+		.tarjetas {
+			margin-top: 3rem;
+		}
+	}
+
+	.seccion-6 {
+		padding: 4rem;
+
+		.tarjetas {
+			margin-top: 3rem;
+		}
+	}
+
+	.seccion-7 {
+		padding: 4rem;
+
+		.tarjetas {
+			flex-wrap: wrap;
+			justify-content: center;
+
+			.tarjeta {
+				width: 50%;
+				margin: 2rem;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	footer {
+		.contacto {
+			padding: 4rem 2rem;
+		}
+	}
+}
+
+@media(max-width: 920px) {
+	header {
+		nav {
+			padding: 1rem 5rem;
+		}
+
+		.principal {
+			flex-wrap: wrap;
+			padding: 4rem 2rem;
+
+			.texto {
+				width: 100%;
+				margin-bottom: 4rem;
+
+				h1 {
+					font-size: 3rem;
+				}
+			}
+
+			form {
+				width: 50%;
+				margin: auto;
+			}
+		}
+	}
+
+	.seccion-2 {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.tabs {
+			flex-direction: row;
+		}
+
+		.texto {
+			width: 100%;
+			margin: 2rem 0;
+		}
+
+		.imagen {
+			width: 60%;
+		}
 	}
 }
