@@ -395,7 +395,7 @@ header {
 		margin-top: 4rem;
 
 		.tar-especial {
-			margin: 0 1rem;
+			margin: 0 2rem;
 		}
 
 		.tarjeta {
@@ -784,14 +784,13 @@ footer {
 
 		.principal {
 			flex-wrap: wrap;
-			padding: 4rem 2rem;
 
 			.texto {
 				width: 100%;
 				margin-bottom: 4rem;
 
 				h1 {
-					font-size: 3rem;
+					font-size: 2.9rem;
 				}
 			}
 
@@ -817,6 +816,139 @@ footer {
 
 		.imagen {
 			width: 60%;
+		}
+	}
+
+	.seccion-3 {
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+
+		.imagen {
+			width: 80%;
+		}
+
+		.texto {
+			width: 100%;
+			margin-bottom: 5rem;
+
+			.list-1 {
+				.imagen-1 {
+					width: 7%;
+				}
+
+				.list-2 {
+					width: 87%;
+				}
+			}
+		}
+	}
+
+	.seccion-4 {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.imagen {
+			width: 80%;
+		}
+
+		.texto {
+			width: 100%;
+			margin-bottom: 5rem;
+
+			.list-1 {
+				.imagen-1 {
+					width: 7%;
+				}
+
+				.list-2 {
+					width: 87%;
+				}
+			}
+		}
+	}
+
+	.seccion-5 {
+		.tarjetas {
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 2rem;
+
+			.tarjeta {
+				width: 60%;
+				margin: 1rem;
+			}
+		}
+	}
+
+	.seccion-6 {
+		.tarjetas {
+			flex-wrap: wrap;
+			margin-top: 2rem;
+
+			.tarjeta {
+				margin: 1rem;
+			}
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	header {
+		nav {
+			padding: 1rem 2rem;
+
+			img {
+				width: 20%;
+			}
+
+			ul {
+				flex-wrap: wrap;
+			}
+		}
+
+		.principal {
+			.texto {
+				img {
+					width: 30%;
+				}
+
+				h1 {
+					font-size: 1.6rem;
+				}
+			}
+
+			form {
+				width: 80%;
+			}
+		}
+	}
+
+	.seccion-1 {
+		flex-wrap: wrap;
+
+		.social {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+
+		.list-img {
+			width: 100%;
+		}
+	}
+
+	.seccion-2 {
+		padding: 4rem 2.5rem;
+
+		.texto {
+			margin: 2.5rem 0;
+		}
+	}
+
+	.seccion-3 {
+		padding: 4rem 2.5rem;
+
+		.texto {
+			margin: 2.5rem 0;
 		}
 	}
 }
