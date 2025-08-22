@@ -60,7 +60,7 @@ header {
 			list-style: none;
 
 			li {
-				padding: 0 0 0 2rem;
+				padding-left: 2rem;
 
 				a {
 					text-decoration: none;
@@ -612,9 +612,10 @@ footer {
 				width: 40%;
 
 				textarea {
-					margin-top: 2.5rem;
+					margin-top: 2.7rem;
 					width: 100%;
 					padding-left: 1rem;
+					padding-bottom: 7.3rem;
 					border: none;
 					border-bottom: 1px solid #D6D6D6;
 					font-family: "Open Sans", sans-serif;
@@ -807,6 +808,12 @@ footer {
 
 		.tabs {
 			flex-direction: row;
+
+			.medio {
+				border: none;
+				border-right: 1px solid #C7C7C7;
+				border-left: 1px solid #C7C7C7;
+			}
 		}
 
 		.texto {
@@ -895,14 +902,20 @@ footer {
 @media(max-width: 768px) {
 	header {
 		nav {
-			padding: 1rem 2rem;
+			display: block;
+			padding: 1rem;
 
 			img {
-				width: 20%;
+				display: none;
 			}
 
 			ul {
 				flex-wrap: wrap;
+				justify-content: space-between;
+
+				li {
+					padding: 0;
+				}
 			}
 		}
 
@@ -942,13 +955,164 @@ footer {
 		.texto {
 			margin: 2.5rem 0;
 		}
+
+		.imagen {
+			width: 80%;
+		}
 	}
 
 	.seccion-3 {
 		padding: 4rem 2.5rem;
 
 		.texto {
-			margin: 2.5rem 0;
+			margin-bottom: 4rem;
+
+			.list-1 {
+				.imagen-1 {
+					width: 8%;
+				}
+
+				.list-2 {
+					width: 87%;
+				}
+			}
+		}
+	}
+
+	.seccion-4 {
+		padding: 4rem 2.5rem;
+	}
+
+	.seccion-5 {
+		padding: 4rem 2.5rem;
+
+		.tarjetas {
+			.tarjeta {
+				margin: 1rem 0;
+				width: 100%;
+			}
+		}
+	}
+
+	.seccion-6 {
+		padding: 4rem 2.5rem;
+	}
+
+	.seccion-7 {
+		padding: 4rem 2.5rem;
+
+		.tarjetas {
+			.tarjeta {
+				margin: 2rem 0 0;
+				width: 70%;
+			}
+		}
+	}
+
+	.seccion-8 {
+		padding: 4rem 2.5rem;
+	}
+}
+
+@media(max-width: 480px) {
+	header {
+		nav {
+			padding: 1rem;
+		}
+
+		.principal {
+			padding: 3rem 2rem;
+
+			.texto {
+				margin-bottom: 3rem;
+
+				h1 {
+					font-size: 1.2rem;
+				}
+			}
+
+			form {
+				width: 100%;
+			}
+		}
+	}
+
+	.seccion-1 {
+		img {
+			width: 12%;
+		}
+	}
+
+	.seccion-2 {
+		padding: 4rem 2rem;
+
+		.imagen {
+			width: 100%;
+		}
+	}
+
+	.seccion-3 {
+		padding: 4rem 2rem;
+
+		.imagen {
+			width: 100%;
+		}
+
+		.list {
+			.list-1 {
+				display: block;
+
+				.imagen-1 {
+					display: none;
+				}
+
+				.list-2 {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.seccion-4 {
+		padding: 4rem 2rem;
+
+		.imagen {
+			width: 100%;
+		}
+	}
+
+	.seccion-5,
+	.seccion-6,
+	.seccion-8 {
+		padding: 4rem 2rem;
+	}
+
+	.seccion-7 {
+		padding: 4rem 2rem;
+
+		.tarjetas {
+			.tarjeta {
+				width: 100%;
+			}
+		}
+	}
+
+	footer {
+		.contacto{
+			.formu {
+				display: block;
+
+				.inputs, .textarea {
+					width: 100%;
+					textarea {
+					padding-bottom: 2rem;
+				}
+				}
+			}
+		}
+
+		.iconos {
+			padding: 1rem;
 		}
 	}
 }
