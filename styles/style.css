@@ -390,7 +390,7 @@ header {
 	.tarjetas {
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-end;
 		margin-top: 4rem;
 
 		.tar-especial {
